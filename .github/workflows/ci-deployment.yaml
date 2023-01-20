@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: echo
         run: |
-          echo $env.oo
+          echo ${{ env.oo }}
