@@ -3,8 +3,7 @@ name: CI/CD workflow
 on:
   push:
 env:
-  oo: ${{ secrets[format('abc_{0}', "aaa" )] }}
-  repositoryName: dta-ct-app-web-dashboard
+  oo: ${{ secrets[format('abc_{0}', secrets.b )] }}
 jobs:
   Build:
     runs-on: ubuntu-latest
