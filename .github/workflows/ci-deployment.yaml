@@ -3,7 +3,7 @@ name: CI/CD workflow
 on:
   push:
 env:
-  oo: ${{ secrets[format('abc_{0}_aa', secrets.b )] }}
+  oo: ${{ secrets[format('abc_{0}_bbb', secrets.b )] }}
 jobs:
   Build:
     runs-on: ubuntu-latest
